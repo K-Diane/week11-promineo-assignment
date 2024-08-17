@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <!-- Link to Bootstrap CSS  -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+    <!-- Link to my CSS file -->
+    <link rel="stylesheet" href="week11assignment.css" />
+  </head>
+  <body class="bg-secondary">
+    <!-- Header Section and Game Title-->
+    <div class="row">
+      <div class="col">
+        <h1 id="Header" class="text-center">Tic-Tac-Toe</h1>
+      </div>
+    </div>
+
+    <!-- information of players-->
+    <div class="row mt-2">
+      <div id="aPlayer" class="col fs-4">Player A - X</div>
+      <div class="col fs-4"></div>
+      <div id="bPlayer" class="col fs-4">Player B - O</div>
+    </div>
+    <!-- alerts sections for start,winner and draw -->
+
+    <div id="alert--container">
+      <div
+        id="alertStart"
+        class="alert alert-primary m-0 ms-5 me-5 fs-3 text-center"
+        role="alert"
+      >
+        player A start! game >
+      </div>
+      <div
+        id="alertWinner"
+        class="alert alert-primary m-0 ms-5 me-5 fs-3 text-center"
+        role="alert"
+      ></div>
+      <div
+        id="alertDraw"
+        class="alert alert-primary m-0 ms-5 me-5 fs-3 text-center"
+        role="alert"
+      >
+        GAME OVER! Its is a DRAW!
+      </div>
+    </div>
+
+    <!-- grid section . creating rows and columns-->
+    <div
+      class="container m-auto p-3 text-center d-flex align-items-center justify-content-center"
+    >
+      <div class="text-center">
+        <div id="grid" class="container text-center">
+          <div class="row fs-2">
+            <div id="cell0" class="cell col-4 p-3 border"></div>
+            <div id="cell1" class="cell col-4 p-3 border"></div>
+            <div id="cell2" class="cell col-4 p-3 border"></div>
+          </div>
+          <div class="row fs-2">
+            <div id="cell3" class="cell col-4 p-3 border"></div>
+            <div id="cell4" class="cell col-4 p-3 border"></div>
+            <div id="cell5" class="cell col-4 p-3 border"></div>
+          </div>
+          <div class="row fs-2">
+            <div id="cell6" class="cell col-4 p-3 border"></div>
+            <div id="cell7" class="cell col-4 p-3 border"></div>
+            <div id="cell8" class="cell col-4 p-3 border"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- buttons section for start and reset-->
+
+    <div class="d-grid col-3 mx-auto pt-3">
+      <button id="startBtn" type="button" class="btn btn-info">start</button>
+      <button id="resetBtn" type="button" class="btn btn-primary">reset</button>
+    </div>
+    <!-- Link to Bootstrap JS  -->
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Link my  JS file -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="week11assignment.js"></script>
+  </body>
+</html>
